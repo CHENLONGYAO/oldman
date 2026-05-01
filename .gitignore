@@ -1,0 +1,16 @@
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.py[cod]
+*.log
+data/
+user_data_backup/
+user_data_old/
+user_data/*.json
+.venv*/
+android/.gradle/
+android/.idea/
+android/build/
+android/app/build/
+android/local.properties
+*.iml

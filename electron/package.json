@@ -1,0 +1,73 @@
+{
+  "name": "smart-rehab",
+  "version": "1.0.0",
+  "description": "Smart home rehabilitation assessment desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64",
+    "build-win": "electron-builder --win --x64",
+    "build-mac": "electron-builder --mac",
+    "build-linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.smartrehab.app",
+    "productName": "SmartRehab",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "package.json",
+      "assets/**"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.healthcare-fitness"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Science"
+    },
+    "extraResources": [
+      {
+        "from": "../",
+        "to": "app",
+        "filter": [
+          "*.py",
+          "requirements.txt",
+          ".streamlit/**",
+          "static/**",
+          "weights/**",
+          "user_data/**",
+          "templates_custom/**",
+          ".venv311/**",
+          "!**/__pycache__/**",
+          "!**/*.pyc",
+          "!**/*.log",
+          "!**/*.err.log",
+          "!**/*.out.log"
+        ]
+      }
+    ]
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  },
+  "keywords": [
+    "rehabilitation",
+    "health",
+    "streamlit"
+  ],
+  "author": "SmartRehab",
+  "license": "MIT"
+}

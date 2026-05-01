@@ -1,0 +1,13 @@
+{
+    "geminicodeassist.outlines.automaticOutlineGeneration": false,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "isort.interpreter": [
+        "${workspaceFolder}/.venv/Scripts/python.exe"
+    ],
+    "isort.importStrategy": "fromEnvironment",
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "claudeCode.useTerminal": true
+}

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile pose_estimator.py scoring.py visualizer.py history.py templates.py app.py)",
+      "Bash(py --version)",
+      "PowerShell(python --version 2>&1)",
+      "PowerShell(py --version 2>&1)",
+      "PowerShell(python --version)",
+      "PowerShell(python -c \"import mediapipe; print\\('mediapipe', mediapipe.__version__\\); print\\('has solutions:', hasattr\\(mediapipe, 'solutions'\\)\\)\")",
+      "PowerShell(& python --version)",
+      "PowerShell(& python -m pip show mediapipe 2>&1)",
+      "PowerShell($ErrorActionPreference=\"SilentlyContinue\")",
+      "Bash(python -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(python -c \"import mediapipe as m; print\\(m.__version__, hasattr\\(m,'solutions'\\)\\)\")",
+      "Bash(timeout 15 python -m streamlit run app.py --server.port 8502 --server.headless true --browser.gatherUsageStats false)",
+      "Bash(pkill -f streamlit)",
+      "Bash(py -3.11 --version)"
+    ]
+  }
+}

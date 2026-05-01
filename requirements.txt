@@ -1,0 +1,74 @@
+streamlit>=1.30
+mediapipe==0.10.14
+opencv-python>=4.8
+numpy>=1.24
+pillow>=10.0
+pandas>=2.0
+plotly>=5.18
+torch>=2.0
+
+# Authentication & Security
+werkzeug>=2.0
+pyjwt>=2.6
+cryptography>=41.0
+google-auth>=2.16
+google-auth-oauthlib>=1.0
+google-auth-httplib2>=0.2
+
+# Database & ORM
+sqlalchemy>=2.0
+alembic>=1.11
+
+# 即時鏡頭指導（可選；未安裝時自動隱藏即時模式）
+streamlit-webrtc>=0.47
+av>=10.0
+
+# PDF 報告輸出（可選）
+reportlab>=4.0
+
+# 離線語音回饋（可選）
+pyttsx3>=2.90
+edge-tts>=6.1
+
+# 設備整合（可選）
+bleak>=0.20
+requests>=2.28
+
+# 雲端儲存（可選）
+boto3>=1.26
+google-cloud-storage>=2.10
+
+# ML 預測（可選）
+scikit-learn>=1.2
+scipy>=1.10
+
+# 加速推論（可選）
+onnxruntime>=1.16
+
+# AI 視覺回饋（可選）
+anthropic>=0.40
+openai>=1.75
+
+# 多人物偵測（可選）
+ultralytics>=8.0
+
+# 向量資料庫（可選 — sqlite-vec 為首選，否則用 numpy 後備）
+sqlite-vec>=0.1.0
+faiss-cpu>=1.7
+
+# 嵌入模型（可選）
+sentence-transformers>=2.5
+voyageai>=0.2
+huggingface_hub>=0.20
+
+# SOTA 模型（可選 — Sapiens / MotionBERT 透過 transformers 載入）
+transformers>=4.40
+accelerate>=0.27
+
+# UI 增強（可選）
+streamlit-lottie>=0.0.5
+streamlit-option-menu>=0.3.2
+
+# 非同步處理（可選）
+aiohttp>=3.8
+python-dotenv>=1.0

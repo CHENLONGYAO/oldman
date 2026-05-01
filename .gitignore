@@ -3,6 +3,12 @@
 __pycache__/
 *.py[cod]
 *.log
+oldman/
+smart/
+mp.zip
+mp10.zip
+mp_cp310/
+mp_extract/
 data/
 user_data_backup/
 user_data_old/
